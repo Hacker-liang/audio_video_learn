@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D98C67FD2199AFFA00D64E77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D98C67FC2199AFFA00D64E77 /* AppDelegate.m */; };
+		D98C68002199AFFA00D64E77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D98C67FF2199AFFA00D64E77 /* ViewController.m */; };
+		D98C68032199AFFA00D64E77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98C68012199AFFA00D64E77 /* Main.storyboard */; };
+		D98C68052199AFFB00D64E77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98C68042199AFFB00D64E77 /* Assets.xcassets */; };
+		D98C68082199AFFB00D64E77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98C68062199AFFB00D64E77 /* LaunchScreen.storyboard */; };
+		D98C680B2199AFFB00D64E77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D98C680A2199AFFB00D64E77 /* main.m */; };
+		D98C68152199AFFB00D64E77 /* PSVideoToolBoxEncodereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98C68142199AFFB00D64E77 /* PSVideoToolBoxEncodereTests.m */; };
+		D98C68202199AFFB00D64E77 /* PSVideoToolBoxEncodereUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98C681F2199AFFB00D64E77 /* PSVideoToolBoxEncodereUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D98C68112199AFFB00D64E77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98C67F02199AFFA00D64E77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D98C67F72199AFFA00D64E77;
+			remoteInfo = PSVideoToolBoxEncodere;
+		};
+		D98C681C2199AFFB00D64E77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98C67F02199AFFA00D64E77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D98C67F72199AFFA00D64E77;
+			remoteInfo = PSVideoToolBoxEncodere;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D98C67F82199AFFA00D64E77 /* PSVideoToolBoxEncodere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSVideoToolBoxEncodere.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98C67FB2199AFFA00D64E77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D98C67FC2199AFFA00D64E77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D98C67FE2199AFFA00D64E77 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D98C67FF2199AFFA00D64E77 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D98C68022199AFFA00D64E77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D98C68042199AFFB00D64E77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D98C68072199AFFB00D64E77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D98C68092199AFFB00D64E77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98C680A2199AFFB00D64E77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D98C68102199AFFB00D64E77 /* PSVideoToolBoxEncodereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSVideoToolBoxEncodereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98C68142199AFFB00D64E77 /* PSVideoToolBoxEncodereTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSVideoToolBoxEncodereTests.m; sourceTree = "<group>"; };
+		D98C68162199AFFB00D64E77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98C681B2199AFFB00D64E77 /* PSVideoToolBoxEncodereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSVideoToolBoxEncodereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98C681F2199AFFB00D64E77 /* PSVideoToolBoxEncodereUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSVideoToolBoxEncodereUITests.m; sourceTree = "<group>"; };
+		D98C68212199AFFB00D64E77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D98C67F52199AFFA00D64E77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98C680D2199AFFB00D64E77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98C68182199AFFB00D64E77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D98C67EF2199AFFA00D64E77 = {
+			isa = PBXGroup;
+			children = (
+				D98C67FA2199AFFA00D64E77 /* PSVideoToolBoxEncodere */,
+				D98C68132199AFFB00D64E77 /* PSVideoToolBoxEncodereTests */,
+				D98C681E2199AFFB00D64E77 /* PSVideoToolBoxEncodereUITests */,
+				D98C67F92199AFFA00D64E77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D98C67F92199AFFA00D64E77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D98C67F82199AFFA00D64E77 /* PSVideoToolBoxEncodere.app */,
+				D98C68102199AFFB00D64E77 /* PSVideoToolBoxEncodereTests.xctest */,
+				D98C681B2199AFFB00D64E77 /* PSVideoToolBoxEncodereUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D98C67FA2199AFFA00D64E77 /* PSVideoToolBoxEncodere */ = {
+			isa = PBXGroup;
+			children = (
+				D98C67FB2199AFFA00D64E77 /* AppDelegate.h */,
+				D98C67FC2199AFFA00D64E77 /* AppDelegate.m */,
+				D98C67FE2199AFFA00D64E77 /* ViewController.h */,
+				D98C67FF2199AFFA00D64E77 /* ViewController.m */,
+				D98C68012199AFFA00D64E77 /* Main.storyboard */,
+				D98C68042199AFFB00D64E77 /* Assets.xcassets */,
+				D98C68062199AFFB00D64E77 /* LaunchScreen.storyboard */,
+				D98C68092199AFFB00D64E77 /* Info.plist */,
+				D98C680A2199AFFB00D64E77 /* main.m */,
+			);
+			path = PSVideoToolBoxEncodere;
+			sourceTree = "<group>";
+		};
+		D98C68132199AFFB00D64E77 /* PSVideoToolBoxEncodereTests */ = {
+			isa = PBXGroup;
+			children = (
+				D98C68142199AFFB00D64E77 /* PSVideoToolBoxEncodereTests.m */,
+				D98C68162199AFFB00D64E77 /* Info.plist */,
+			);
+			path = PSVideoToolBoxEncodereTests;
+			sourceTree = "<group>";
+		};
+		D98C681E2199AFFB00D64E77 /* PSVideoToolBoxEncodereUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D98C681F2199AFFB00D64E77 /* PSVideoToolBoxEncodereUITests.m */,
+				D98C68212199AFFB00D64E77 /* Info.plist */,
+			);
+			path = PSVideoToolBoxEncodereUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D98C67F72199AFFA00D64E77 /* PSVideoToolBoxEncodere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98C68242199AFFB00D64E77 /* Build configuration list for PBXNativeTarget "PSVideoToolBoxEncodere" */;
+			buildPhases = (
+				D98C67F42199AFFA00D64E77 /* Sources */,
+				D98C67F52199AFFA00D64E77 /* Frameworks */,
+				D98C67F62199AFFA00D64E77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSVideoToolBoxEncodere;
+			productName = PSVideoToolBoxEncodere;
+			productReference = D98C67F82199AFFA00D64E77 /* PSVideoToolBoxEncodere.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D98C680F2199AFFB00D64E77 /* PSVideoToolBoxEncodereTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98C68272199AFFB00D64E77 /* Build configuration list for PBXNativeTarget "PSVideoToolBoxEncodereTests" */;
+			buildPhases = (
+				D98C680C2199AFFB00D64E77 /* Sources */,
+				D98C680D2199AFFB00D64E77 /* Frameworks */,
+				D98C680E2199AFFB00D64E77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98C68122199AFFB00D64E77 /* PBXTargetDependency */,
+			);
+			name = PSVideoToolBoxEncodereTests;
+			productName = PSVideoToolBoxEncodereTests;
+			productReference = D98C68102199AFFB00D64E77 /* PSVideoToolBoxEncodereTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D98C681A2199AFFB00D64E77 /* PSVideoToolBoxEncodereUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98C682A2199AFFB00D64E77 /* Build configuration list for PBXNativeTarget "PSVideoToolBoxEncodereUITests" */;
+			buildPhases = (
+				D98C68172199AFFB00D64E77 /* Sources */,
+				D98C68182199AFFB00D64E77 /* Frameworks */,
+				D98C68192199AFFB00D64E77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98C681D2199AFFB00D64E77 /* PBXTargetDependency */,
+			);
+			name = PSVideoToolBoxEncodereUITests;
+			productName = PSVideoToolBoxEncodereUITests;
+			productReference = D98C681B2199AFFB00D64E77 /* PSVideoToolBoxEncodereUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D98C67F02199AFFA00D64E77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "梁鹏帅";
+				TargetAttributes = {
+					D98C67F72199AFFA00D64E77 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D98C680F2199AFFB00D64E77 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D98C67F72199AFFA00D64E77;
+					};
+					D98C681A2199AFFB00D64E77 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D98C67F72199AFFA00D64E77;
+					};
+				};
+			};
+			buildConfigurationList = D98C67F32199AFFA00D64E77 /* Build configuration list for PBXProject "PSVideoToolBoxEncodere" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D98C67EF2199AFFA00D64E77;
+			productRefGroup = D98C67F92199AFFA00D64E77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D98C67F72199AFFA00D64E77 /* PSVideoToolBoxEncodere */,
+				D98C680F2199AFFB00D64E77 /* PSVideoToolBoxEncodereTests */,
+				D98C681A2199AFFB00D64E77 /* PSVideoToolBoxEncodereUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D98C67F62199AFFA00D64E77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98C68082199AFFB00D64E77 /* LaunchScreen.storyboard in Resources */,
+				D98C68052199AFFB00D64E77 /* Assets.xcassets in Resources */,
+				D98C68032199AFFA00D64E77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98C680E2199AFFB00D64E77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98C68192199AFFB00D64E77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D98C67F42199AFFA00D64E77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98C68002199AFFA00D64E77 /* ViewController.m in Sources */,
+				D98C680B2199AFFB00D64E77 /* main.m in Sources */,
+				D98C67FD2199AFFA00D64E77 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98C680C2199AFFB00D64E77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98C68152199AFFB00D64E77 /* PSVideoToolBoxEncodereTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98C68172199AFFB00D64E77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98C68202199AFFB00D64E77 /* PSVideoToolBoxEncodereUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D98C68122199AFFB00D64E77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D98C67F72199AFFA00D64E77 /* PSVideoToolBoxEncodere */;
+			targetProxy = D98C68112199AFFB00D64E77 /* PBXContainerItemProxy */;
+		};
+		D98C681D2199AFFB00D64E77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D98C67F72199AFFA00D64E77 /* PSVideoToolBoxEncodere */;
+			targetProxy = D98C681C2199AFFB00D64E77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D98C68012199AFFA00D64E77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98C68022199AFFA00D64E77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D98C68062199AFFB00D64E77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98C68072199AFFB00D64E77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D98C68222199AFFB00D64E77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D98C68232199AFFB00D64E77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D98C68252199AFFB00D64E77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8RG7Y36J8;
+				INFOPLIST_FILE = PSVideoToolBoxEncodere/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pengshuai.PSVideoToolBoxEncodere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D98C68262199AFFB00D64E77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8RG7Y36J8;
+				INFOPLIST_FILE = PSVideoToolBoxEncodere/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pengshuai.PSVideoToolBoxEncodere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D98C68282199AFFB00D64E77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8RG7Y36J8;
+				INFOPLIST_FILE = PSVideoToolBoxEncodereTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pengshuai.PSVideoToolBoxEncodereTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PSVideoToolBoxEncodere.app/PSVideoToolBoxEncodere";
+			};
+			name = Debug;
+		};
+		D98C68292199AFFB00D64E77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8RG7Y36J8;
+				INFOPLIST_FILE = PSVideoToolBoxEncodereTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pengshuai.PSVideoToolBoxEncodereTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PSVideoToolBoxEncodere.app/PSVideoToolBoxEncodere";
+			};
+			name = Release;
+		};
+		D98C682B2199AFFB00D64E77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8RG7Y36J8;
+				INFOPLIST_FILE = PSVideoToolBoxEncodereUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pengshuai.PSVideoToolBoxEncodereUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PSVideoToolBoxEncodere;
+			};
+			name = Debug;
+		};
+		D98C682C2199AFFB00D64E77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8RG7Y36J8;
+				INFOPLIST_FILE = PSVideoToolBoxEncodereUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pengshuai.PSVideoToolBoxEncodereUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PSVideoToolBoxEncodere;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D98C67F32199AFFA00D64E77 /* Build configuration list for PBXProject "PSVideoToolBoxEncodere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98C68222199AFFB00D64E77 /* Debug */,
+				D98C68232199AFFB00D64E77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98C68242199AFFB00D64E77 /* Build configuration list for PBXNativeTarget "PSVideoToolBoxEncodere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98C68252199AFFB00D64E77 /* Debug */,
+				D98C68262199AFFB00D64E77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98C68272199AFFB00D64E77 /* Build configuration list for PBXNativeTarget "PSVideoToolBoxEncodereTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98C68282199AFFB00D64E77 /* Debug */,
+				D98C68292199AFFB00D64E77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98C682A2199AFFB00D64E77 /* Build configuration list for PBXNativeTarget "PSVideoToolBoxEncodereUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98C682B2199AFFB00D64E77 /* Debug */,
+				D98C682C2199AFFB00D64E77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D98C67F02199AFFA00D64E77 /* Project object */;
+}
