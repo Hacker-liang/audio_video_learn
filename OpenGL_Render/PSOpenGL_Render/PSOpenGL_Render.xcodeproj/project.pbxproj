@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D95E34A42199B49300F567AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D95E34A32199B49300F567AA /* AppDelegate.m */; };
-		D95E34A72199B49300F567AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D95E34A62199B49300F567AA /* ViewController.m */; };
+		D95E34A72199B49300F567AA /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D95E34A62199B49300F567AA /* ViewController.mm */; };
 		D95E34AA2199B49300F567AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95E34A82199B49300F567AA /* Main.storyboard */; };
 		D95E34AC2199B49400F567AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95E34AB2199B49400F567AA /* Assets.xcassets */; };
 		D95E34AF2199B49400F567AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95E34AD2199B49400F567AA /* LaunchScreen.storyboard */; };
 		D95E34B22199B49400F567AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D95E34B12199B49400F567AA /* main.m */; };
 		D95E34BC2199B49400F567AA /* PSOpenGL_RenderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D95E34BB2199B49400F567AA /* PSOpenGL_RenderTests.m */; };
 		D95E34C72199B49400F567AA /* PSOpenGL_RenderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D95E34C62199B49400F567AA /* PSOpenGL_RenderUITests.m */; };
+		D95E34DB219AAB9800F567AA /* PSOpenGLRenderView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D95E34DA219AAB9800F567AA /* PSOpenGLRenderView.mm */; };
+		D95E34DE219AABAD00F567AA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95E34DD219AABAD00F567AA /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		D95E34A22199B49300F567AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D95E34A32199B49300F567AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D95E34A52199B49300F567AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D95E34A62199B49300F567AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D95E34A62199B49300F567AA /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		D95E34A92199B49300F567AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D95E34AB2199B49400F567AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D95E34AE2199B49400F567AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,9 @@
 		D95E34C22199B49400F567AA /* PSOpenGL_RenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSOpenGL_RenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95E34C62199B49400F567AA /* PSOpenGL_RenderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSOpenGL_RenderUITests.m; sourceTree = "<group>"; };
 		D95E34C82199B49400F567AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D95E34D9219AAB9800F567AA /* PSOpenGLRenderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSOpenGLRenderView.h; sourceTree = "<group>"; };
+		D95E34DA219AAB9800F567AA /* PSOpenGLRenderView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PSOpenGLRenderView.mm; sourceTree = "<group>"; };
+		D95E34DD219AABAD00F567AA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95E34DE219AABAD00F567AA /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 				D95E34BA2199B49400F567AA /* PSOpenGL_RenderTests */,
 				D95E34C52199B49400F567AA /* PSOpenGL_RenderUITests */,
 				D95E34A02199B49300F567AA /* Products */,
+				D95E34DC219AABAD00F567AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,7 +111,9 @@
 				D95E34A22199B49300F567AA /* AppDelegate.h */,
 				D95E34A32199B49300F567AA /* AppDelegate.m */,
 				D95E34A52199B49300F567AA /* ViewController.h */,
-				D95E34A62199B49300F567AA /* ViewController.m */,
+				D95E34A62199B49300F567AA /* ViewController.mm */,
+				D95E34D9219AAB9800F567AA /* PSOpenGLRenderView.h */,
+				D95E34DA219AAB9800F567AA /* PSOpenGLRenderView.mm */,
 				D95E34A82199B49300F567AA /* Main.storyboard */,
 				D95E34AB2199B49400F567AA /* Assets.xcassets */,
 				D95E34AD2199B49400F567AA /* LaunchScreen.storyboard */,
@@ -130,6 +139,14 @@
 				D95E34C82199B49400F567AA /* Info.plist */,
 			);
 			path = PSOpenGL_RenderUITests;
+			sourceTree = "<group>";
+		};
+		D95E34DC219AABAD00F567AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D95E34DD219AABAD00F567AA /* OpenGLES.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D95E34A72199B49300F567AA /* ViewController.m in Sources */,
+				D95E34A72199B49300F567AA /* ViewController.mm in Sources */,
 				D95E34B22199B49400F567AA /* main.m in Sources */,
+				D95E34DB219AAB9800F567AA /* PSOpenGLRenderView.mm in Sources */,
 				D95E34A42199B49300F567AA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G8RG7Y36J8;
 				INFOPLIST_FILE = PSOpenGL_Render/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G8RG7Y36J8;
 				INFOPLIST_FILE = PSOpenGL_Render/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
