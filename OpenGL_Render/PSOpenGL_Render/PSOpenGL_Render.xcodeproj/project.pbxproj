@@ -54,6 +54,9 @@
 		D95E3532219ACEA800F567AA /* pngset.c in Sources */ = {isa = PBXBuildFile; fileRef = D95E350D219ACEA800F567AA /* pngset.c */; };
 		D95E3533219ACEA800F567AA /* png.5 in Resources */ = {isa = PBXBuildFile; fileRef = D95E350E219ACEA800F567AA /* png.5 */; };
 		D95E3534219ACEA800F567AA /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D95E350F219ACEA800F567AA /* 1.png */; };
+		D95E3537219ACF3800F567AA /* rgba_frame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D95E3535219ACF3800F567AA /* rgba_frame.cpp */; };
+		D95E353B219AD39A00F567AA /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D95E3539219AD39A00F567AA /* CommonUtil.m */; };
+		D95E3540219BCB3700F567AA /* PSTextureRender.mm in Sources */ = {isa = PBXBuildFile; fileRef = D95E353F219BCB3700F567AA /* PSTextureRender.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +142,12 @@
 		D95E350D219ACEA800F567AA /* pngset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngset.c; sourceTree = "<group>"; };
 		D95E350E219ACEA800F567AA /* png.5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = png.5; sourceTree = "<group>"; };
 		D95E350F219ACEA800F567AA /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		D95E3535219ACF3800F567AA /* rgba_frame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rgba_frame.cpp; sourceTree = "<group>"; };
+		D95E3536219ACF3800F567AA /* rgba_frame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rgba_frame.hpp; sourceTree = "<group>"; };
+		D95E3539219AD39A00F567AA /* CommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtil.m; sourceTree = "<group>"; };
+		D95E353A219AD39A00F567AA /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
+		D95E353E219BCB3700F567AA /* PSTextureRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSTextureRender.h; sourceTree = "<group>"; };
+		D95E353F219BCB3700F567AA /* PSTextureRender.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PSTextureRender.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +200,7 @@
 		D95E34A12199B49300F567AA /* PSOpenGL_Render */ = {
 			isa = PBXGroup;
 			children = (
+				D95E3538219AD39A00F567AA /* utils */,
 				D95E350F219ACEA800F567AA /* 1.png */,
 				D95E34E0219ACEA800F567AA /* 3rdparty */,
 				D95E34A22199B49300F567AA /* AppDelegate.h */,
@@ -199,11 +209,15 @@
 				D95E34A62199B49300F567AA /* ViewController.mm */,
 				D95E34D9219AAB9800F567AA /* PSOpenGLRenderView.h */,
 				D95E34DA219AAB9800F567AA /* PSOpenGLRenderView.mm */,
+				D95E353E219BCB3700F567AA /* PSTextureRender.h */,
+				D95E353F219BCB3700F567AA /* PSTextureRender.mm */,
 				D95E34A82199B49300F567AA /* Main.storyboard */,
 				D95E34AB2199B49400F567AA /* Assets.xcassets */,
 				D95E34AD2199B49400F567AA /* LaunchScreen.storyboard */,
 				D95E34B02199B49400F567AA /* Info.plist */,
 				D95E34B12199B49400F567AA /* main.m */,
+				D95E3535219ACF3800F567AA /* rgba_frame.cpp */,
+				D95E3536219ACF3800F567AA /* rgba_frame.hpp */,
 			);
 			path = PSOpenGL_Render;
 			sourceTree = "<group>";
@@ -292,6 +306,15 @@
 				D95E350E219ACEA800F567AA /* png.5 */,
 			);
 			path = libpng;
+			sourceTree = "<group>";
+		};
+		D95E3538219AD39A00F567AA /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				D95E3539219AD39A00F567AA /* CommonUtil.m */,
+				D95E353A219AD39A00F567AA /* CommonUtil.h */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +480,7 @@
 				D95E3524219ACEA800F567AA /* pngwtran.c in Sources */,
 				D95E3516219ACEA800F567AA /* pngwio.c in Sources */,
 				D95E34A72199B49300F567AA /* ViewController.mm in Sources */,
+				D95E3540219BCB3700F567AA /* PSTextureRender.mm in Sources */,
 				D95E34B22199B49400F567AA /* main.m in Sources */,
 				D95E3522219ACEA800F567AA /* pngwutil.c in Sources */,
 				D95E3526219ACEA800F567AA /* png_decoder.cpp in Sources */,
@@ -465,6 +489,8 @@
 				D95E3511219ACEA800F567AA /* pngrio.c in Sources */,
 				D95E3527219ACEA800F567AA /* pngpread.c in Sources */,
 				D95E34A42199B49300F567AA /* AppDelegate.m in Sources */,
+				D95E353B219AD39A00F567AA /* CommonUtil.m in Sources */,
+				D95E3537219ACF3800F567AA /* rgba_frame.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

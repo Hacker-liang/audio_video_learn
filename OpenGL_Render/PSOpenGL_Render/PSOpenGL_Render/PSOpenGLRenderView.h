@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PSOpenGLRenderView : UIView
 
+- (instancetype)initWithFrame:(CGRect)frame filePath:(NSString *)path;
+
+- (void)render;
+
 @end
 
 NS_ASSUME_NONNULL_END

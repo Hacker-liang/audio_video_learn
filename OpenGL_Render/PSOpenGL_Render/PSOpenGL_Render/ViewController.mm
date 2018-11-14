@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "PSOpenGLRenderView.h"
+#import "CommonUtil.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSString* pngFilePath = [CommonUtil bundlePath:@"1.png"];
+
+    PSOpenGLRenderView *glView = [[PSOpenGLRenderView alloc] initWithFrame:self.view.bounds filePath:pngFilePath];
+    [self.view addSubview: glView];
+    [glView render];
 }
 
 
