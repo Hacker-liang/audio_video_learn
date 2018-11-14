@@ -68,12 +68,10 @@
 {
     dispatch_async(_contextQueue, ^{
         if (self->_frame) {
-            [EAGLContext setCurrentContext:self->_context];
-            glBindFramebuffer(GL_FRAMEBUFFER, self->_displayFrameBuffer);
-//            glViewport(0, self->_backingHeight - self->_backingWidth - 75, self->_backingWidth, self->_backingWidth);
+//            [EAGLContext setCurrentContext:self->_context];
+//            glBindFramebuffer(GL_FRAMEBUFFER, self->_displayFrameBuffer);
             glViewport(0, self->_backingHeight-self->_frame->height, self->_frame->width, self->_frame->height);
             [self->_textureRender renderFrame:self->_frame->pixels];
-            glBindRenderbuffer(GL_RENDERBUFFER, self->_renderBuffer);
             [self->_context presentRenderbuffer:GL_RENDERBUFFER];
         }
     });
