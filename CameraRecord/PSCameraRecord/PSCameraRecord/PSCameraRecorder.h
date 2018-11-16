@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PSCameraRecorder : NSObject
 
+- (void)startPreview;
+
+- (void)stopPreview;
+
 @end
 
 NS_ASSUME_NONNULL_END

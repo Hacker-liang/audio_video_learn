@@ -16,6 +16,8 @@
 		D95E3567219C576E00F567AA /* PSCameraRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D95E3566219C576E00F567AA /* PSCameraRecordTests.m */; };
 		D95E3572219C576E00F567AA /* PSCameraRecordUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D95E3571219C576E00F567AA /* PSCameraRecordUITests.m */; };
 		D95E3581219C5A9300F567AA /* PSCameraRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D95E3580219C5A9300F567AA /* PSCameraRecorder.m */; };
+		D95E3584219D4EEF00F567AA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95E3583219D4EEF00F567AA /* AVFoundation.framework */; };
+		D95E3586219D4EF800F567AA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95E3585219D4EF800F567AA /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		D95E3573219C576E00F567AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D95E357F219C5A9300F567AA /* PSCameraRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSCameraRecorder.h; sourceTree = "<group>"; };
 		D95E3580219C5A9300F567AA /* PSCameraRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSCameraRecorder.m; sourceTree = "<group>"; };
+		D95E3583219D4EEF00F567AA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D95E3585219D4EF800F567AA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95E3586219D4EF800F567AA /* CoreMedia.framework in Frameworks */,
+				D95E3584219D4EEF00F567AA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +94,7 @@
 				D95E3565219C576E00F567AA /* PSCameraRecordTests */,
 				D95E3570219C576E00F567AA /* PSCameraRecordUITests */,
 				D95E354B219C576D00F567AA /* Products */,
+				D95E3582219D4EEE00F567AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +142,15 @@
 				D95E3573219C576E00F567AA /* Info.plist */,
 			);
 			path = PSCameraRecordUITests;
+			sourceTree = "<group>";
+		};
+		D95E3582219D4EEE00F567AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D95E3585219D4EF800F567AA /* CoreMedia.framework */,
+				D95E3583219D4EEF00F567AA /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

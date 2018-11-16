@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "PSCameraRecorder.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) PSCameraRecorder *cameraRecorder;
 
 @end
 
@@ -16,8 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _cameraRecorder = [[PSCameraRecorder alloc] init];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [_cameraRecorder startPreview];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [_cameraRecorder stopPreview];
+}
 
 @end
