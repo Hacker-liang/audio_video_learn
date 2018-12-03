@@ -384,15 +384,17 @@ GLfloat *colorConversion709 = colorConversion709Default;
 -(void) captureOutput:(AVCaptureOutput*)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection*)connection
 {
     if (self.shouldEnableOpenGL) {
-        if (dispatch_semaphore_wait(_frameRenderingSemaphore, DISPATCH_TIME_NOW) != 0) {
-            return;
-        }
+//        if (dispatch_semaphore_wait(_frameRenderingSemaphore, DISPATCH_TIME_NOW) != 0) {
+//            return;
+//        }
         
         CFRetain(sampleBuffer);
         runAsyncOnVideoProcessingQueue(^{
+            [NSThread sleepForTimeInterval:0.1];
             [self processVideoSampleBuffer:sampleBuffer];
+
             CFRelease(sampleBuffer);
-            dispatch_semaphore_signal(_frameRenderingSemaphore);
+//            dispatch_semaphore_signal(_frameRenderingSemaphore);
         });
     }
 }

@@ -79,13 +79,17 @@
     [_captureSession stopRunning];
 }
 
+- (void)processVideoSampleBuffer:(CMSampleBufferRef)sampleBuffer {
+    
+}
+
 - (void)captureOutput:(AVCaptureOutput *)output didDropSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
     NSLog(@"I am dropping frame: %@", sampleBuffer);
 }
 
 - (void)captureOutput:(AVCaptureOutput *)output didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
     NSLog(@"I am receiving frame: %@", sampleBuffer);
-
+    [self processVideoSampleBuffer:sampleBuffer];
 }
 
 @end
